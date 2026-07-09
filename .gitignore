@@ -1,0 +1,80 @@
+# ============================================================
+# .gitignore for SMAS (GitHub + Render + Vercel deployment)
+# ============================================================
+
+# -----------------------------------------------
+# Secrets & environment files — NEVER commit these
+# -----------------------------------------------
+.env
+.env.*
+!.env.example
+*.secret
+
+# -----------------------------------------------
+# .NET / C# build output
+# -----------------------------------------------
+bin/
+obj/
+*.user
+*.suo
+*.vs/
+.vs/
+*.dbmdl
+*.jfm
+*.nupkg
+*.snupkg
+TestResults/
+[Pp]ublish/
+artifacts/
+*.publish.xml
+
+# -----------------------------------------------
+# Logs
+# -----------------------------------------------
+logs/
+*.log
+*.txt.log
+
+# -----------------------------------------------
+# Node / React / Vite (frontend)
+# -----------------------------------------------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+.vite/
+dist/
+.next/
+
+# -----------------------------------------------
+# OS junk
+# -----------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------
+# IDE / Editor
+# -----------------------------------------------
+.idea/
+*.swp
+*.swo
+.vscode/settings.json
+# (keep .vscode/extensions.json and tasks.json if you want)
+
+# -----------------------------------------------
+# Docker — kept Dockerfile at root, nothing else to ignore
+# -----------------------------------------------
+# docker-compose*.yml already deleted
+
+# -----------------------------------------------
+# Database migration snapshots (optional, keep if desired)
+# -----------------------------------------------
+# migrations/
+
+# -----------------------------------------------
+# Python scripts runtime artefacts
+# -----------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
