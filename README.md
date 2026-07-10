@@ -73,38 +73,47 @@
 </ul>
 
 <h3>Getting Started</h3>
-<pre><code># 1. Clone the repository
-git clone https://github.com/&lt;your-username&gt;/SMAS.git
+
+<h4>1. Clone the repository</h4>
+<pre><code>git clone https://github.com/&lt;your-username&gt;/SMAS.git
 cd SMAS
-
-# 2. Configure environment variables
-cp .env.example .env
-# then fill in JWT_KEY, JWT_ISSUER, JWT_AUDIENCE, DB_CONNECTION_STRING, etc.
-
-# 3. Install all dependencies (Python, npm, NuGet)
-python setup_all.py
-
-# 4. Set up the database
-psql -U postgres -d smas_db -f schema.sql
-
-# 5. Run the app (builds + starts backend and frontend, opens browser)
-python run_smas.py
 </code></pre>
 
-<p>By default:</p>
-<ul>
-  <li>Backend API — <code>http://localhost:5000</code></li>
-  <li>Frontend — <code>http://localhost:3000</code></li>
-  <li>Health check — <code>http://localhost:5000/health</code></li>
-</ul>
+<h4>2. Configure environment variables</h4>
+<pre><code>cp .env.example .env
+</code></pre>
+<p>Then fill in <code>JWT_KEY</code>, <code>JWT_ISSUER</code>, <code>JWT_AUDIENCE</code>, <code>DB_CONNECTION_STRING</code>, etc.</p>
+
+<h4>3. Install dependencies</h4>
+<pre><code>python setup_all.py
+</code></pre>
+<p>Installs Python packages, npm packages, and restores NuGet packages in one go.</p>
+
+<h4>4. Set up the database</h4>
+<pre><code>psql -U postgres -d smas_db -f schema.sql
+</code></pre>
+
+<h4>5. Run the app</h4>
+<pre><code>python run_smas.py
+</code></pre>
+<p>Builds and starts both servers, then opens the app in your browser automatically.</p>
+
+<table>
+  <tr><th>Service</th><th>URL</th></tr>
+  <tr><td>Backend API</td><td><code>http://localhost:5000</code></td></tr>
+  <tr><td>Frontend</td><td><code>http://localhost:3000</code></td></tr>
+  <tr><td>Health check</td><td><code>http://localhost:5000/health</code></td></tr>
+</table>
 
 <h3>Manual Start (Alternative)</h3>
-<pre><code># Backend
-cd SMAS.API
-dotnet run
 
-# Frontend
-cd frontend
+<p><strong>Backend</strong></p>
+<pre><code>cd SMAS.API
+dotnet run
+</code></pre>
+
+<p><strong>Frontend</strong></p>
+<pre><code>cd frontend
 npm install
 npm run dev
 </code></pre>
