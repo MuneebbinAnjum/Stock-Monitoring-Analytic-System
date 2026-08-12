@@ -183,7 +183,7 @@ def main() -> int:
     logger.info("SMAS Project Setup")
     logger.info("=" * 60)
 
-    # Step 0: Environment setup
+   
     load_env()
 
     try:
