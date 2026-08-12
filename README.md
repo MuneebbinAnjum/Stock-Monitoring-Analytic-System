@@ -190,3 +190,9 @@ docker run -p 5000:5000 --env-file .env smas-api
   best-guess. Paste in key files (e.g. <code>Program.cs</code>, controllers, <code>App.jsx</code>) to get this 
   filled in with real details.
 </blockquote>
+
+## Author
+
+**Muneeb Bin Anjum**
+
+- Github: [@MuneebbinAnjum](https://github.com/MuneebbinAnjum)
