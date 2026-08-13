@@ -248,7 +248,7 @@ Stock-Monitoring-Analytic-System/
 
 ---
 
-## 📊 Key Controllers & Endpoints
+## Key Controllers & Endpoints
 
 ### Authentication
 - `POST /api/auth/login` - User login
@@ -320,7 +320,7 @@ The system uses **JWT (JSON Web Tokens)** for authentication with three main rol
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 Key tables include:
 - **Users** - User accounts with roles
@@ -357,7 +357,7 @@ npm run test
 
 ---
 
-## 📈 Development Workflow
+## Development Workflow
 
 ### Backend Development
 ```bash
