@@ -512,13 +512,13 @@ Create an issue with:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 👥 Team & Attribution
+## Team & Attribution
 
 **Stock Monitoring and Analytics System** developed as a comprehensive full-stack application.
 
